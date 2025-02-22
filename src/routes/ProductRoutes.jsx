@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import ProductList from "../pages/ProductList";
+import ProductCart from "../pages/ProductCart";
 
 const ProductRoutes = () => {
   const [cart, setCart] = useState([]); // Cart state management
@@ -20,6 +21,10 @@ const ProductRoutes = () => {
             setCartCount={setCartCount}
           />
         }
+      />
+      <Route
+        path="/productCart"
+        element={<ProductCart cart={cart} setCart={setCart} />}
       />
     </Routes>
   );

@@ -41,7 +41,7 @@ const Header = ({ cart }) => {
                 Products
               </Button>
             </Link>
-            <Link to="/cart" style={{ textDecoration: "none" }}>
+            <Link to="/user/productCart" style={{ textDecoration: "none" }}>
               <IconButton color="inherit">
                 <Badge badgeContent={cart ? cart.length : 0} color="error">
                   <ShoppingCartIcon sx={{ color: "white" }} />
@@ -57,7 +57,7 @@ const Header = ({ cart }) => {
                 Products
               </Button>
             </Link>
-            <Link to="/cart" style={{ textDecoration: "none" }}>
+            <Link to="/user/productCart" style={{ textDecoration: "none" }}>
               <IconButton color="inherit">
                 <Badge badgeContent={cart ? cart.length : 0} color="error">
                   <ShoppingCartIcon sx={{ color: "white" }} />
