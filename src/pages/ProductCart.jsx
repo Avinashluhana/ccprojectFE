@@ -59,7 +59,7 @@ const ProductCart = () => {
   };
 
   const handleCheckout = () => {
-    navigate("/customer/checkout");
+    navigate("/user/checkout");
   };
 
   const calculateTotal = () => {

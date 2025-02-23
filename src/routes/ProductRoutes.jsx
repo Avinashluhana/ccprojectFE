@@ -3,6 +3,9 @@ import React, { useState } from "react";
 import { Route, Routes } from "react-router-dom";
 import ProductList from "../pages/ProductList";
 import ProductCart from "../pages/ProductCart";
+import UserCheckout from "../pages/UserCheckout";
+import PaymentDetailsForm from "../components/UserPaymentForm";
+import OrderReviewPage from "../components/OrderReview";
 
 const ProductRoutes = () => {
   const [cart, setCart] = useState([]); // Cart state management
@@ -26,6 +29,11 @@ const ProductRoutes = () => {
         path="/productCart"
         element={<ProductCart cart={cart} setCart={setCart} />}
       />
+      <Route path="/checkout" element={<UserCheckout cart={cart} />} />
+      {/* Payment Page */}
+      <Route path="/payment" element={<PaymentDetailsForm />} />
+      {/* Order Review Page */}
+      <Route path="/review" element={<OrderReviewPage cart={cart} />} />
     </Routes>
   );
 };

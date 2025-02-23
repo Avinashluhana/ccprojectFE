@@ -36,7 +36,7 @@ const Header = ({ cart }) => {
           <Box sx={{ flexGrow: 1 }} />
           <Box sx={{ display: { xs: "flex", sm: "none" } }}>
             {/* Products and Cart buttons for mobile */}
-            <Link to="/products" style={{ textDecoration: "none" }}>
+            <Link to="/" style={{ textDecoration: "none" }}>
               <Button color="inherit" sx={{ color: "white" }}>
                 Products
               </Button>
@@ -52,7 +52,7 @@ const Header = ({ cart }) => {
 
           <Box sx={{ display: { xs: "none", sm: "flex" } }}>
             {/* Products and Cart buttons for desktop */}
-            <Link to="/products" style={{ textDecoration: "none" }}>
+            <Link to="/" style={{ textDecoration: "none" }}>
               <Button color="inherit" sx={{ color: "white" }}>
                 Products
               </Button>
